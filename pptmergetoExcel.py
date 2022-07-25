@@ -35,5 +35,7 @@ def ppt_toExcel():
     print("Document's keywords have been extracted successfully!") ## Print a message to the user
 
     df_new.to_excel(excel_path + '\Merged_file.xlsx', index = False) ## Export to an excel file
+    
+    print('Powerpoint have been merged and stored at ' + excel_path + '\Merged_file.xlsx')
 
 ppt_toExcel() ## Call the function
